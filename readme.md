@@ -1,0 +1,1 @@
+Los ejercicios 1 y 7 estan funcionando, el resto de archivos está comentado /**/

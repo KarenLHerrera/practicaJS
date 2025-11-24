@@ -16,10 +16,14 @@ html += "</ul>";
 
 document.getElementById("ejercicio1").innerHTML = html;
 
+
+
+
+
 /*Ejercicio 2 
 Crear un script que solicite al usuario mediante un prompt el nombre de ciudades y
 almacenarlas en un arreglo. Cuando el usuario presiona “cancelar” se debe mostrar el
-arreglo generado.*/
+arreglo generado.
 
 let ciudades = [];
 let ciudad;
@@ -30,10 +34,14 @@ do {
     }
 } while (ciudad);
 
-document.getElementById("ejercicio2").innerHTML = "<h2>Ciudades ingresadas</h2><ul>" + ciudades.map(ciudad => `<li>${ciudad}</li>`).join('') + "</ul>";
+document.getElementById("ejercicio2").innerHTML = "<h2>Ciudades ingresadas</h2><ul>" + ciudades.map(ciudad => `<li>${ciudad}</li>`).join('') + "</ul>";*/
+
+
+
+
 
 /*Ejercicio 3
-Crear una función esMayor(edad) que devuelva true si es >= 18.*/
+Crear una función esMayor(edad) que devuelva true si es >= 18.
 
 function esMayor(edad) {
     return edad >= 18;
@@ -41,10 +49,14 @@ function esMayor(edad) {
 
 let edadUsuario = parseInt(prompt("Ingresá tu edad:"));
 let esMayorDeEdad = esMayor(edadUsuario);
-document.getElementById("ejercicio3").innerHTML = `<p>¿Es mayor de edad? ${esMayorDeEdad}</p>`;
+document.getElementById("ejercicio3").innerHTML = `<p>¿Es mayor de edad? ${esMayorDeEdad}</p>`;*/
+
+
+
+
 
 /*Ejercicio 4
-Crear una función longitud(cadena) que devuelva la longitud de una cadena. */
+Crear una función longitud(cadena) que devuelva la longitud de una cadena. 
 
 function longitud(cadena) {
     return cadena.length;
@@ -52,10 +64,14 @@ function longitud(cadena) {
 
 let cadenaUsuario = prompt("Ingresá una cadena:");
 let longitudCadena = longitud(cadenaUsuario);
-document.getElementById("ejercicio4").innerHTML = `<p>La longitud de la cadena "${cadenaUsuario}" es: ${longitudCadena}</p>`; 
+document.getElementById("ejercicio4").innerHTML = `<p>La longitud de la cadena "${cadenaUsuario}" es: ${longitudCadena}</p>`; */
+
+
+
+
 
 /*Ejercicio 5
-Crear una clase Persona con nombre y edad. Agregar un método que salude.*/
+Crear una clase Persona con nombre y edad. Agregar un método que salude.
 
 class Persona {
     constructor(nombre, edad) {
@@ -70,11 +86,15 @@ class Persona {
 let nombrePersona = prompt("Ingresá el nombre de la persona:");
 let edadPersona = parseInt(prompt("Ingresá la edad de la persona:"));
 let persona1 = new Persona(nombrePersona, edadPersona);
-document.getElementById("ejercicio5").innerHTML = `<p>${persona1.saludar()}</p>`;
+document.getElementById("ejercicio5").innerHTML = `<p>${persona1.saludar()}</p>`;*/
+
+
+
+
 
 /*Ejercicio 6
 Crear una clase Estudiante que herede de Persona y agregar un atributo curso a la clase
-Estudiante.*/
+Estudiante.
 
 class Estudiante extends Persona {
     constructor(nombre, edad, curso) {
@@ -88,7 +108,11 @@ class Estudiante extends Persona {
 }
 let cursoEstudiante = prompt("Ingresá el curso del estudiante:");
 let estudiante1 = new Estudiante(nombrePersona, edadPersona, cursoEstudiante);
-document.getElementById("ejercicio6").innerHTML = `<p>${estudiante1.saludar()}</p>`;
+document.getElementById("ejercicio6").innerHTML = `<p>${estudiante1.saludar()}</p>`;*/
+
+
+
+
 
 
 
