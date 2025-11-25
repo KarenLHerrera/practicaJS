@@ -1,7 +1,7 @@
 
 /*Ejercicio 1 - ARREGLOS
 Crear un array llamado meses que almacene el nombre de los doce meses del año. Mostrar el
-arreglo usando document.write() o document.body.innerHTML.
+arreglo usando document.write() o document.body.innerHTML.*/
 
 let meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
 
@@ -14,7 +14,14 @@ for(let i = 0; i < meses.length; i++){
 
 html += "</ul>";
 
-document.getElementById("ejercicio1").innerHTML = html;*/
+document.getElementById("ejercicio1").innerHTML = html;
+
+/*document.getElementById("ejercicio1").innerHTML = `
+    <h2>Meses del año</h2>
+    <ul>
+        ${meses.map(m => `<li>${m}</li>`).join("")}
+    </ul>
+`;*/
 
 
 
@@ -23,7 +30,7 @@ document.getElementById("ejercicio1").innerHTML = html;*/
 /*Ejercicio 2 
 Crear un script que solicite al usuario mediante un prompt el nombre de ciudades y
 almacenarlas en un arreglo. Cuando el usuario presiona “cancelar” se debe mostrar el
-arreglo generado.*/
+arreglo generado.
 
 let ciudades = [];
 let ciudad;
@@ -34,7 +41,9 @@ do {
     }
 } while (ciudad);
 
-document.getElementById("ejercicio2").innerHTML =`<h2>Ciudades ingresadas</h2><ul> ${ciudades.map(ciudad => `<li>${ciudad}</li>`).join('')}  </ul>`;
+document.getElementById("ejercicio2").innerHTML =`<h2>Ciudades ingresadas</h2><ul> ${ciudades.map(ciudad => `<li>${ciudad}</li>`).join('')}  </ul>`*/;
+
+
 
 
 
